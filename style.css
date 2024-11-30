@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+button{
+    display: inline-block; /* Allow the button to be inline */
+    padding: 10px 30px; /* Add padding for size */
+    font-size: 10px; /* Set the font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+    background-color: orangered; /* Blue background */
+    border-radius: 50px; /* Pill shape: large border radius */
+    border: none; /* Remove border */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and scale */
+    cursor: pointer; /* Change cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+#main{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container-one{
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    width: 90%;
+
+}
+.nav ul{
+    display: flex;
+    list-style: none;   
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(73, 71, 71);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.nav a hover{
+    color: rgb(85, 83, 83);
+}
+.landing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px;
+}
+.text{
+    flex: 1;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    justify-content: space-around;
+    height: 400px;
+}
+.text h1{
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.text p{
+    color: #555;
+    text-align: center;
+    text-align: left;
+    font-size: 14px;
+}
+.text-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.manage{
+    max-width: 50%;
+    flex: 1;
+    margin-right: 20px;
+}
+.manage h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.manage p{
+    font-size: 16px;
+    color: #555;
+}
+.column-2 {
+    flex: 1;
+}
+/* Style the ordered list and remove default styling */
+.numbered-list {
+    list-style: none; /* Remove the default list numbers */
+    padding-left: 0; /* Remove the padding on the left */
+}
+/* Style each list item */
+.list-item {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 50px; /* Add space to the left for the number */
+}
+/* Style the number itself */
+.number {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orangered; /* Number background color */
+    color: white; /* Text color for the number */
+    border-radius: 50%; /* Make the number round */
+    width: 30px; /* Size of the circle */
+    height: 30px; /* Size of the circle */
+    display: flex;
+    justify-content: center; /* Center the number horizontally */
+    align-items: center; /* Center the number vertically */
+    position: absolute;
+    left: 10px; /* Position it on the left */
+    top: 0;
+}
+
+/* Explanation under each list item */
+.list-item .explanation {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+    margin-left: 40px; /* Align explanation with the list item */
+}
+
+
+
+
+
+
+.container-three{
+    text-align: center;
+    justify-content: center;
+}
+.workers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.worker{
+    background-color: #fafafa;
+    margin: 10px;
+    position: relative;
+    top: 80px;
+}
+
+.worker p{
+    padding: 20px;
+}
+.worker img{
+    position: relative;
+    bottom: 50px;
+    width: 90px;
+}
+.worker-btn{
+    position: relative;
+    top: 120px;
+}
+
+.container-four{
+    height: 200px;
+    background-color: orangered;
+    display: flex;
+    justify-content: space-around;
+}
+.content{
+    position: relative;
+    top: 60px;
+    color: white;
+}
+.container-four button{
+    height: 35px;
+    width: 80px;
+    position: relative;
+    top: 70px;
+    background-color: white;
+    color: orangered;
+}
+.container-five{
+    height: 200px;
+    background-color: rgb(23, 22, 24);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-column{
+    display: block;
+}
+.logo{
+    padding: 20px;
+}
+.socials{
+    padding: 20px;
+}
+.soc{
+    margin: 3px;
+}
+/* Styling for the navigation list */
+.list-one {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center align the entire navigation */
+    padding: 20px;
+}
+
+.list-one ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+    display: block; /* Make the list block-level (stack vertically) */
+}
+
+.list-one li {
+    margin: 10px 0; /* Space between each list item */
+}
+
+.list-one a {
+    color: #bbb; /* Light grey color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Larger font size for readability */
+    font-weight: 500; /* Slightly bold */
+    display: block; /* Make the link fill the entire list item */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.list-one a:hover {
+    color: white; /* Change color to white on hover */
+    text-decoration: underline; /* Underline on hover */
+    border-bottom: 2px solid orangered; /* Add a bottom border to links on hover */
+}
+.form-column{
+    display: block;
+    justify-content: center;
+}
+.form{
+    margin: 20px;
+}
+.copyright{
+    padding: 20px;
+}
